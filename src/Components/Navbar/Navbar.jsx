@@ -3,6 +3,7 @@ import "./Navbar.css";
 import "../About/About"
 import "../Hero/Hero"
 import "../Admission/Admission"
+import "../CurriculumPlan/CurriculumPlan"
 import logo from "../../assets/Shockness_University.png"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <AnchorLink offset={50} href="#"><img src={logo} alt="ShocknessULogo"/></AnchorLink>
+      <AnchorLink offset={50} href="#hero"><img src={logo} alt="ShocknessULogo"/></AnchorLink>
       <ul className="nav-menu">
         <li><AnchorLink offset={50} href="#about-information">About</AnchorLink></li>
         <li><AnchorLink offset={50} href="#mission-information">Shockness University: Mission Statement</AnchorLink></li>
@@ -35,10 +36,7 @@ const Navbar = () => {
               onMouseOver={() => setOpenDropdown(true)}
               onMouseLeave={() => setOpenDropdown(false)}
             >
-              <li><AnchorLink offset={50} href="#cirriculum-plan"></AnchorLink></li>
-              <li>Graduate</li>
-              <li>Transfer Students</li>
-              <li>Online Programs</li>
+              <li><AnchorLink offset={50} href="#curriculum-plan">Curriculum Plan</AnchorLink></li>
             </ul>
           )}
         </li>

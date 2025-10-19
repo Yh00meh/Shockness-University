@@ -8,7 +8,7 @@ const Hero = () => {
     return (     
         <BackgroundHero>  
             <motion.div 
-            className='hero' 
+            className='hero' id='hero'
                 initial={{
                         opacity: 0,
                         scale: 1.25
