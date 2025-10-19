@@ -1,0 +1,59 @@
+.curriculum-container {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+}
+
+.curriculum-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.year-section {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 2rem 3rem;
+}
+
+.year-section h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 0.3rem;
+}
+
+.semester {
+  margin-bottom: 1.5rem;
+}
+
+.semester h3 {
+  color: #0073e6;
+  margin-bottom: 0.8rem;
+}
+
+.semester ul {
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.summary {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+}

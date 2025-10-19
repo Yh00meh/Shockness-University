@@ -1,0 +1,47 @@
+.about {
+  background: radial-gradient(circle at 20% 30%, #1e40af, transparent 60%),
+              radial-gradient(circle at 80% 70%, #0ea5e9, transparent 60%),
+              #0f172a;
+  color: white;
+  text-align: center;
+  padding: 6rem 10rem;
+}
+
+
+.about-title, .mission-title{
+    position: relative;
+    margin-top: 120px;
+}
+
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.about-sections{
+    display: flex;
+    gap: 80px;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px
+}
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-left img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}

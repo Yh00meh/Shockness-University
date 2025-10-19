@@ -1,0 +1,68 @@
+/* Background container */
+.background-admission {
+  background-image: url('../../assets/Admission_nurse.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* White box */
+.admission {
+  background: rgba(255, 255, 255, 0.95);
+  width: 70%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  padding: 3rem 4rem;
+  color: #000;
+  line-height: 1.8;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Headline */
+.admission h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Text styling */
+.admission p,
+.admission ol,
+.admission ul {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.admission ul {
+  margin-left: 1.5rem; /* Moves it a bit to the right */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.admission li {
+  margin-bottom: 0.6rem;
+}
+
+/* Optional scrollbar styling for long content */
+.admission::-webkit-scrollbar {
+  width: 8px;
+}
+.admission::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.admission::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+body::-webkit-scrollbar {
+        display: none; 
+    }

@@ -1,0 +1,31 @@
+.background-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.blur-overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.1); /* optional tint */
+  z-index: 1;
+}
+
+.background-hero > *:not(.bg-image):not(.blur-overlay) {
+  position: relative;
+  z-index: 2;
+}
