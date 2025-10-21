@@ -1,4 +1,3 @@
-/* Background container */
 .background-admission {
   background-image: url('../../assets/Admission_nurse.avif');
   background-size: cover;
@@ -6,52 +5,63 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
+  gap: 2rem;
 }
 
-/* White box */
-.admission {
+.admission, .info-bubble {
   background: rgba(255, 255, 255, 0.95);
-  width: 70%;
-  max-width: 900px;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  padding: 3rem 4rem;
   color: #000;
   line-height: 1.8;
-  overflow-y: auto;
-  max-height: 90vh;
+  width: 70%;
+  max-width: 900px;
+  padding: 3rem 4rem;
 }
 
-/* Headline */
+.info-bubble {
+  background: rgba(255, 255, 255, 0.92);
+  width: 60%;
+  max-width: 800px;
+  backdrop-filter: blur(5px);
+}
+
+.admission h1, .info-bubble h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
 .admission h1 {
   font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
-/* Text styling */
+.info-bubble h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .admission p,
 .admission ol,
-.admission ul {
+.admission ul,
+.info-bubble p,
+.info-bubble ul {
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
 }
 
-.admission ul {
-  margin-left: 1.5rem; /* Moves it a bit to the right */
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.admission ul, .info-bubble ul {
+  margin-left: 1.5rem;
 }
 
-.admission li {
+li {
   margin-bottom: 0.6rem;
 }
 
-/* Optional scrollbar styling for long content */
 .admission::-webkit-scrollbar {
   width: 8px;
 }
@@ -64,5 +74,5 @@
 }
 
 body::-webkit-scrollbar {
-        display: none; 
-    }
+  display: none;
+}
