@@ -38,7 +38,7 @@ const Admission = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1.2 } }}
       >
-        <h2>International Students</h2>
+        <h2 id='inter-stu'>International Students</h2>
         <p>
           I-20 support; financial documentation; official evaluated transcripts (NACES member).
         </p>
@@ -64,7 +64,7 @@ const Admission = () => {
           <li>Students on probation will have a remediation plan with an advisor and may appeal via University committees per policy.</li>
         </ul>
 
-        <h2>Interprofessional Education & Technology</h2>
+        <h2 id='edu-tech'>Interprofessional Education & Technology</h2>
         <ul>
           <li>Collaborative case studies and clinical rounds with pharmacy, PT/OT, and social work, emphasizing systems thinking and population health.</li>
           <li>Informatics: EHR training, decision-support tools, and medication reconciliation.</li>
@@ -72,7 +72,7 @@ const Admission = () => {
           <li>Evidence-based practice: data analytics projects and research appraisal to support clinical decision-making.</li>
         </ul>
 
-        <h2>Student Experience & Support</h2>
+        <h2 id='exper-supp'>Student Experience & Support</h2>
         <ul>
           <li>Academic advising and mentoring to support progression and licensure readiness.</li>
           <li>Learning Resource Center: tutoring, writing support, and language assistance for international students.</li>

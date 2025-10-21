@@ -4,6 +4,7 @@ import "../About/About"
 import "../Hero/Hero"
 import "../Admission/Admission"
 import "../CurriculumPlan/CurriculumPlan"
+import "../Footer/Footer"
 import logo from "../../assets/Shockness_University.png"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -36,7 +37,11 @@ const Navbar = () => {
               onMouseOver={() => setOpenDropdown(true)}
               onMouseLeave={() => setOpenDropdown(false)}
             >
+              <li><AnchorLink offset={50} href="#inter-stu">International Students</AnchorLink></li>
+              <li><AnchorLink offset={50} href="#edu-tech">Interprofessional Education & Technology</AnchorLink></li>
+              <li><AnchorLink offset={50} href="#exper-supp">Student Experience & Support</AnchorLink></li>
               <li><AnchorLink offset={50} href="#curriculum-plan">Curriculum Plan</AnchorLink></li>
+              <li><AnchorLink offset={50} href="#contact-info">Contact Information</AnchorLink></li>
             </ul>
           )}
         </li>
